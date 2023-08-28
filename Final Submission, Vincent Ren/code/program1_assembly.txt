@@ -1,0 +1,146 @@
+MOV R1, 0		// I = 0
+MOV R0, 0		
+ADR R0, R1		// X = I
+ADI R0, -8
+ADI R0, -8
+ADI R0, -8
+ADI R0, -6		// I - 30 == 0?		
+BRC 0			// jump to end (4095)
+MOV R0, 0		// X = R0, I = R1
+ADR R0, R1		
+ADI R0, 1			// X = I + 1
+LDR R0, R0		// X = MEM[I + 1];
+LSH R0, 5			// X <<= 5;
+MOV R2, 0
+ADR R2, R1		// A = I
+LDR R2, R2		// A = MEM[I];
+LSH R2, -4		// A >>= 4;
+LSH R2, 1			// A <<= 1;
+XOR R0, R2		// X ^= A;
+MOV R2, -8		// get Q, A = Q
+ADR R0, R2		// X += A(Q)
+MOV R2, 0
+ADR R2, R1		// A = I
+ADI R2, 7
+ADI R2, 7
+ADI R2, 7
+ADI R2, 7
+ADI R2, 3			// A = I + 31
+STR R0, R2		// MEM[I +31] = X, done first hafl
+MOV R0, 0
+ADR R0, R1
+LDR R0, R0		// X = MEM[I]
+LSH R0, -1		// X >>= 1
+LSH R0, 5			// X <<= 5
+MOV R2, 0		// A = R2, B = R3
+ADR R2, R1		// A = I
+ADI R2, 1			// A = I + 1
+LDR R2, R2		// A = MEM[I + 1]
+LSH R2, 5			// A <<= 5
+MOV R3, 0
+ADR R3, R1
+LDR R3, R3		// B = MEM[I]
+LSH R3, -7		// B >>= 7
+XOR R2, R3		// A ^= B
+MOV R3, 0
+ADR R3, R1
+LDR R3, R3		// B = MEM[I]
+LSH R3, 4			// B <<= 4
+LSH R3, -5		// B >>= 5
+LSH R3, 1			// B <<= 1
+XOR R2, R3		// A ^= B
+MOV R2, -8		// A = Q
+LSH R2, 4			// A <<= 4
+XOR R0, R2		// X ^= A
+MOV R2, 0
+ADR R2, R1	
+LDR R2, R2		// A = MEM[I]
+LSH R2, 7			// A <<= 7
+LSH R2, -4		// A >>= 4
+XOR R0, R2		// X ^= A
+MOV R2, 0
+ADR R2, R1
+ADI R2, 1	
+LDR R2, R2		// A = MEM[I + 1]
+LSH R2, -1		// A >>= 1
+LSH R2, 6			// A <<= 6
+MOV R3, 0
+ADR R3, R1	
+LDR R3, R3		// B = MEM[I]
+LSH R3, 1			// B <<= 1
+LSH R3, -6		// B >>= 6
+XOR R2, R3		// A ^= B
+MOV R3, 0
+ADR R3, R1		
+LDR R3, R3		// B = MEM[I]
+LSH R3, 4			// B <<= 4
+LSH R3, -6		// B >>= 6
+LSH R3, 2			// B <<= 2
+XOR R2, R3		// A ^= B
+MOV R3, 0
+ADR R3, R1
+LDR R3, R3		// B = MEM[I]
+LSH R3, 7			// B <<= 7
+LSH R3, -2		// B >>= 2
+XOR R2, R3		// A ^= B
+MOV R2, -8		// A = Q
+LSH R2, 2			// A <<= 2
+XOR R0, R2		// X ^= A
+MOV R2, 0
+ADR R2, R1
+ADI R2, 1	
+LDR R2, R2		// A = MEM[I + 1]
+LSH R2, -2		// A >>= 2
+LSH R2, 7			// A <<= 7
+MOV R3, 0
+ADR R3, R1
+ADI R3, 1		
+LDR R3, R3		// B = MEM[I + 1]
+LSH R3, 7			// B <<= 7
+LSH R3, -1		// B >>= 1
+XOR R2, R3		// A ^= B
+MOV R3, 0
+ADR R3, R1	
+LDR R3, R3		// B = MEM[I];
+LSH R3, 1			// B <<= 1
+LSH R3, -7		// B >>= 7
+LSH R3, 5			// B <<= 5
+XOR R2, R3		// A ^= B
+MOV R3, 0
+ADR R3, R1
+LDR R3, R3		// B = MEM[I]
+LSH R3, 3			// B <<= 3
+LSH R3, -6		// B >>= 6
+LSH R3, 3			// B <<= 3
+XOR R2, R3		// A ^= B
+MOV R3, 0
+ADR R3, R1
+LDR R3, R3		// B = MEM[I]
+LSH R3, 6			// B <<= 6
+LSH R3, -5		// B >>= 5
+XOR R2, R3		// A ^= B
+MOV R2, -8		// A = Q
+LSH R2, 1			// A <<= 1
+XOR R0, R2		// X ^= A
+MOV R2, 0
+ADR R2, R1
+ADI R2, 7
+ADI R2, 7
+ADI R2, 7
+ADI R2, 7
+ADI R2, 3
+LDR R2, R2		// A = MEM[I + 31]
+XOR R2, R0		// A ^= X
+MOV R3, -8		// B = Q
+ADR X0, R3		// A += B(Q)
+MOV R2, 0
+ADR R2, R1
+ADI R2, 7
+ADI R2, 7
+ADI R2, 7
+ADI R2, 7
+ADI R2, 2
+STR R0, R2		// MEM[I + 30] = X	
+ADI R1, 2			// I = I + 2
+MOV R0, 0		// Make branch
+BRC 1			// branch to loop (1)

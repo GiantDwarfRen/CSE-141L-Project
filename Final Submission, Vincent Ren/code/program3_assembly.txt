@@ -1,0 +1,206 @@
+MOV R0, 0	// X = 0. For mem[33:35] initialization
+MOV R1, 7
+ADI R1, 7
+ADI R1, 7
+ADI R1, 7
+ADI R1, 5
+STR R0, R1	// MEM[33] = 0
+ADI R1, 1
+STR R0, R1	// MEM[34] = 0
+ADI R1, 1
+STR R0, R1	// MEM[35] = 0
+ADI R1, -3	
+LDR R1, R1	
+ADR R0, R1	// X = MEM[32]
+LSH R0, -3	// X >>= 3
+MOV R1, 0
+MOV R2, 0	// 22 dest
+ADR R2, R1
+ADI R2, -7
+ADI R2, -7
+ADI R2, -7
+ADI R2, -7
+ADI R2, -3	// I - 31 == 0?
+BRC 23		
+MOV R3, 0	// B = 0;
+LDR R2, R1	// A = MEM[I]
+LSH R2, -3	// A >>= 3
+XOR R2, R0	// A ^= X
+BRC 24		// go to B++
+BRC 25		// skip B++
+ADI R3, 1		// 24 dest. B++
+LDR R2, R1	// 25 dest. A = MEM[I]
+LSH R2, 1		// A <<= 1
+LSH R2, -3	// A >>= 3
+XOR R2, R0	// A ^= 0
+BRC 26
+BRC 27
+ADI R3, 1		// 26 dest
+LDR R2, R1	// 27 dest
+LSH R2, 2		
+LSH R2, -3	
+XOR R2, R0	
+BRC 28
+BRC 29
+ADI R3, 1		// 28 dest
+LDR R2, R1	// 29 dest.
+LSH R2, 3		
+LSH R2, -3	
+XOR R2, R0	
+BRC 30
+BRC 31
+ADI R3, 1		// 30 dest
+ADI R3, 0		// 31 dest
+BRC 32		// If B == 0
+MOV R0, 0	// tempory clean X for storing issue. Store back later
+MOV R2, 7
+ADI R2, 7
+ADI R2, 7
+ADI R2, 7
+ADI R2, 5
+LDR R0, R2	// X = MEM[33]
+ADR R0, R3	// X += B
+STR R0, R2	// MEM[33] += B
+ADI R2, 1
+LDR R0, R2	// X = MEM[34]
+ADI R0, 1		// X ++
+STR R0, R2	// MEM[34]++
+ADI R2, 1		
+LDR R0, R2	// X = MEM[35]
+ADR R0, R3	
+STR R0, R2	// MEM[35] += B
+ADI R2, -3	// A = 32
+LDR R0, R2	// X = MEM[32]
+LSH R0, -3	// X >>= 3
+LDR R2, R1	// 32 dest. A = MEM[I]
+LSH R2, 4		// A <<= 4
+LSH R2, -3	// A >>= 3
+MOV R3, 0
+ADR R3, R1
+ADI R3, 1		// B = I + 1
+LDR R3, R3	// B = MEM[I + 1]
+LSH R3, -7	// B >>= 7
+XOR R2, R3	// A ^= B
+XOR R2, R0	// A ^= X
+BRC 33		// A == 0
+BRC 34
+MOV R2, 7	// 33 dest
+ADI R2, 7
+ADI R2, 7
+ADI R2, 7
+ADI R2, 7		// A = 35
+LDR R3, R2	// B = MEM[35]
+ADI R3, 1		// B++
+STR R3, R2	// MEM[35] = B = MEM[35]++
+LDR R2, R1	// 34 dest. 
+LSH R2, 5		
+LSH R2, -3	
+MOV R3, 0
+ADR R3, R1
+ADI R3, 1		
+LDR R3, R3	
+LSH R3, -6	
+XOR R2, R3	
+XOR R2, R0	
+BRC 35		
+BRC 36
+MOV R2, 7	// 35 dest
+ADI R2, 7
+ADI R2, 7
+ADI R2, 7
+ADI R2, 7		
+LDR R3, R2	
+ADI R3, 1		
+STR R3, R2	
+LDR R2, R1	// 36 dest. 
+LSH R2, 6		
+LSH R2, -3	
+MOV R3, 0
+ADR R3, R1
+ADI R3, 1		
+LDR R3, R3	
+LSH R3, -5	
+XOR R2, R3	
+XOR R2, R0	
+BRC 37		
+BRC 38
+MOV R2, 7	// 37 dest
+ADI R2, 7
+ADI R2, 7
+ADI R2, 7
+ADI R2, 7		
+LDR R3, R2	
+ADI R3, 1		
+STR R3, R2			
+LDR R2, R1	// 38 dest. 
+LSH R2, 7		
+LSH R2, -3	
+MOV R3, 0
+ADR R3, R1
+ADI R3, 1		
+LDR R3, R3	
+LSH R3, -4	
+XOR R2, R3	
+XOR R2, R0	
+BRC 39		
+BRC 40
+MOV R2, 7	// 39 dest
+ADI R2, 7
+ADI R2, 7
+ADI R2, 7
+ADI R2, 7		
+LDR R3, R2	
+ADI R3, 1		
+STR R3, R2	
+ADI R1, 1		// 40 dest. I++
+MOV R2, 0
+BRC 22		// go back to loop
+MOV R3, 0	// 23 dest. Single process mem[31]. B = 0
+LDR R2, R1	// A = MEM[I]
+LSH R2, -3	// A >>= 3
+XOR R2, R0	// A ^= X
+BRC 41		// go to B++
+BRC 42		// skip B++
+ADI R3, 1		// 41 dest. B++
+LDR R2, R1	// 42 dest. A = MEM[I]
+LSH R2, 1		// A <<= 1
+LSH R2, -3	// A >>= 3
+XOR R2, R0	// A ^= 0
+BRC 43
+BRC 44
+ADI R3, 1		// 43 dest
+LDR R2, R1	// 44 dest
+LSH R2, 2		
+LSH R2, -3	
+XOR R2, R0	
+BRC 45
+BRC 46
+ADI R3, 1		// 45 dest
+LDR R2, R1	// 46 dest.
+LSH R2, 3		
+LSH R2, -3	
+XOR R2, R0	
+BRC 47
+BRC 48
+ADI R3, 1		// 47 dest
+ADI R3, 0		// 48 dest
+BRC 0		// If B == 0. Just finish the program
+MOV R0, 0	// tempory clean X for storing issue. Store back later
+MOV R2, 7
+ADI R2, 7
+ADI R2, 7
+ADI R2, 7
+ADI R2, 5
+LDR R0, R2	// X = MEM[33]
+ADR R0, R3	// X += B
+STR R0, R2	// MEM[33] += B
+ADI R2, 1
+LDR R0, R2	// X = MEM[34]
+ADI R0, 1		// X ++
+STR R0, R2	// MEM[34]++
+ADI R2, 1		
+LDR R0, R2	// X = MEM[35]
+ADR R0, R3	
+STR R0, R2	// MEM[35] += B
+MOV R0, 0
+BRC 0		// finish program either way

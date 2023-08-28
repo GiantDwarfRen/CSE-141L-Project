@@ -1,0 +1,195 @@
+{{C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/Control.sv}} {1 {vlog -work work -sv {C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/Control.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 02:37:39 on Aug 21,2023
+vlog -reportprogress 300 -work work -sv C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/Control.sv 
+-- Compiling module Control
+
+Top level modules:
+	Control
+End time: 02:37:39 on Aug 21,2023, Elapsed time: 0:00:00
+
+} {} {}} {C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/alu.sv} {1 {vlog -work work -sv -stats=none {C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/alu.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module alu
+
+Top level modules:
+	alu
+
+} {} {}} {{C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/alu.sv}} {1 {vlog -work work -sv {C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/alu.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 02:37:40 on Aug 21,2023
+vlog -reportprogress 300 -work work -sv C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/alu.sv 
+-- Compiling module alu
+
+Top level modules:
+	alu
+End time: 02:37:40 on Aug 21,2023, Elapsed time: 0:00:00
+
+} {} {}} {C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/PC.sv} {1 {vlog -work work -sv -stats=none {C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/PC.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module PC
+
+Top level modules:
+	PC
+
+} {} {}} {{C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/milestone2_quicktest_tb.sv}} {1 {vlog -work work -sv {C:\Users\18758\Desktop\CSE 141\CSE 141L\hardware_starter_code\milestone2_quicktest_tb.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 02:37:40 on Aug 21,2023
+vlog -reportprogress 300 -work work -sv C:\Users\18758\Desktop\CSE 141\CSE 141L\hardware_starter_code\milestone2_quicktest_tb.sv 
+-- Compiling module milestone2_quicktest_tb
+
+Top level modules:
+	milestone2_quicktest_tb
+End time: 02:37:40 on Aug 21,2023, Elapsed time: 0:00:00
+
+} {} {}} {{C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/PC.sv}} {1 {vlog -work work -sv {C:\Users\18758\Desktop\CSE 141\CSE 141L\hardware_starter_code\PC.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 02:37:39 on Aug 21,2023
+vlog -reportprogress 300 -work work -sv C:\Users\18758\Desktop\CSE 141\CSE 141L\hardware_starter_code\PC.sv 
+-- Compiling module PC
+
+Top level modules:
+	PC
+End time: 02:37:39 on Aug 21,2023, Elapsed time: 0:00:00
+
+} {} {}} {C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/instr_ROM.sv} {1 {vlog -work work -sv -stats=none {C:\Users\18758\Desktop\CSE 141\CSE 141L\hardware_starter_code\instr_ROM.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module instr_ROM
+
+Top level modules:
+	instr_ROM
+
+} {} {}} {C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/reg_file.sv} {1 {vlog -work work -sv -stats=none {C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/reg_file.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module reg_file
+
+Top level modules:
+	reg_file
+
+} {} {}} {{C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/reg_file.sv}} {1 {vlog -work work -sv {C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/reg_file.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 02:37:40 on Aug 21,2023
+vlog -reportprogress 300 -work work -sv C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/reg_file.sv 
+-- Compiling module reg_file
+
+Top level modules:
+	reg_file
+End time: 02:37:40 on Aug 21,2023, Elapsed time: 0:00:00
+
+} {} {}} {C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/prog1_tb.sv} {1 {vlog -work work -sv -stats=none {C:\Users\18758\Desktop\CSE 141\CSE 141L\hardware_starter_code\prog1_tb.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module prog1_tb
+
+Top level modules:
+	prog1_tb
+
+} {} {}} {C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/milestone2_quicktest.sv} {1 {vlog -work work -sv -stats=none {C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/milestone2_quicktest.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+
+} {} {}} {C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/prog2_tb.sv} {1 {vlog -work work -sv -stats=none {C:\Users\18758\Desktop\CSE 141\CSE 141L\hardware_starter_code\prog2_tb.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module prog2_tb
+
+Top level modules:
+	prog2_tb
+
+} {} {}} {{C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/PC_LUT.sv}} {1 {vlog -work work -sv {C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/PC_LUT.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 02:37:40 on Aug 21,2023
+vlog -reportprogress 300 -work work -sv C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/PC_LUT.sv 
+-- Compiling module PC_LUT
+
+Top level modules:
+	PC_LUT
+End time: 02:37:40 on Aug 21,2023, Elapsed time: 0:00:00
+
+} {} {}} {C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/dat_mem.sv} {1 {vlog -work work -sv -stats=none {C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/dat_mem.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module dat_mem
+
+Top level modules:
+	dat_mem
+
+} {} {}} {C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/PC_LUT.sv} {1 {vlog -work work -sv -stats=none {C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/PC_LUT.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module PC_LUT
+
+Top level modules:
+	PC_LUT
+
+} {} {}} {C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/prog3_tb.sv} {1 {vlog -work work -sv -stats=none {C:\Users\18758\Desktop\CSE 141\CSE 141L\hardware_starter_code\prog3_tb.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module prog3_tb
+
+Top level modules:
+	prog3_tb
+
+} {} {}} {C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/Control.sv} {1 {vlog -work work -sv -stats=none {C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/Control.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Control
+
+Top level modules:
+	Control
+
+} {} {}} {C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/sign_ext.sv} {1 {vlog -work work -sv -stats=none {C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/sign_ext.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module sign_ext
+
+Top level modules:
+	sign_ext
+
+} {} {}} {C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/top_level.sv} {1 {vlog -work work -sv -stats=none {C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/top_level.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module top_level
+
+Top level modules:
+	top_level
+
+} {} {}} {{C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/top_level.sv}} {1 {vlog -work work -sv {C:\Users\18758\Desktop\CSE 141\CSE 141L\hardware_starter_code\top_level.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 02:37:40 on Aug 21,2023
+vlog -reportprogress 300 -work work -sv C:\Users\18758\Desktop\CSE 141\CSE 141L\hardware_starter_code\top_level.sv 
+-- Compiling module top_level
+
+Top level modules:
+	top_level
+End time: 02:37:40 on Aug 21,2023, Elapsed time: 0:00:00
+
+} {} {}} {C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/milestone2_quicktest_tb.sv} {1 {vlog -work work -sv -stats=none {C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/milestone2_quicktest_tb.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module milestone2_quicktest_tb
+
+Top level modules:
+	milestone2_quicktest_tb
+
+} {} {}} {{C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/instr_ROM.sv}} {1 {vlog -work work -sv {C:\Users\18758\Desktop\CSE 141\CSE 141L\hardware_starter_code\instr_ROM.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 02:37:39 on Aug 21,2023
+vlog -reportprogress 300 -work work -sv C:\Users\18758\Desktop\CSE 141\CSE 141L\hardware_starter_code\instr_ROM.sv 
+-- Compiling module instr_ROM
+
+Top level modules:
+	instr_ROM
+End time: 02:37:39 on Aug 21,2023, Elapsed time: 0:00:00
+
+} {} {}} {{C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/milestone2_quicktest.sv}} {1 {vlog -work work -sv {C:\Users\18758\Desktop\CSE 141\CSE 141L\hardware_starter_code\milestone2_quicktest.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 02:37:40 on Aug 21,2023
+vlog -reportprogress 300 -work work -sv C:\Users\18758\Desktop\CSE 141\CSE 141L\hardware_starter_code\milestone2_quicktest.sv 
+-- Compiling module top_level
+
+Top level modules:
+	top_level
+End time: 02:37:40 on Aug 21,2023, Elapsed time: 0:00:00
+
+} {} {}} {{C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/dat_mem.sv}} {1 {vlog -work work -sv {C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/dat_mem.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 02:37:39 on Aug 21,2023
+vlog -reportprogress 300 -work work -sv C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/dat_mem.sv 
+-- Compiling module dat_mem
+
+Top level modules:
+	dat_mem
+End time: 02:37:39 on Aug 21,2023, Elapsed time: 0:00:00
+
+} {} {}}

@@ -1,0 +1,636 @@
+# Compile of Control.sv was successful.
+# Compile of dat_mem.sv was successful.
+# Compile of instr_ROM.sv was successful.
+# Compile of PC.sv was successful.
+# Compile of PC_LUT.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of top_level.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of milestone2_quicktest.sv was successful.
+# Compile of milestone2_quicktest_tb.sv was successful.
+# Compile of sign_ext.sv was successful.
+# Compile of prog1_tb.sv was successful.
+# Compile of prog2_tb.sv was successful.
+# Compile of prog3_tb.sv was successful.
+# 14 compiles, 0 failed with no errors.
+# Load canceled
+# Compile of Control.sv was successful.
+# Compile of dat_mem.sv was successful.
+# Compile of instr_ROM.sv was successful.
+# Compile of PC.sv was successful.
+# Compile of PC_LUT.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of top_level.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of milestone2_quicktest.sv was successful.
+# Compile of milestone2_quicktest_tb.sv was successful.
+# Compile of sign_ext.sv was successful.
+# Compile of prog1_tb.sv was successful.
+# Compile of prog2_tb.sv was successful.
+# Compile of prog3_tb.sv was successful.
+# 14 compiles, 0 failed with no errors.
+vsim -gui work.prog1_tb
+# vsim -gui work.prog1_tb 
+# Start time: 02:22:11 on Aug 29,2023
+# Loading sv_std.std
+# Loading work.prog1_tb
+# Loading work.top_level
+# Loading work.PC
+# Loading work.PC_LUT
+# Loading work.instr_ROM
+# Loading work.Control
+# Loading work.reg_file
+# Loading work.sign_ext
+# Loading work.alu
+# Loading work.dat_mem
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint sim:/prog1_tb/DUT/*
+run -all
+# start program 1
+#  
+# 0110101000110000
+# 0110101000110000
+#  we have a match!
+#  
+# 1011110110000001
+# 1011110110000001
+#  we have a match!
+#  
+# 1010110000000110
+# 1010110000000110
+#  we have a match!
+#  
+# 1010110001100000
+# 1010110001100000
+#  we have a match!
+#  
+# 1111011000000110
+# 1111011000000110
+#  we have a match!
+#  
+# 0011001110010110
+# 0011001110010110
+#  we have a match!
+#  
+# 0000100101100000
+# 0000100101100000
+#  we have a match!
+#  
+# 1010010100001111
+# 1010010100001111
+#  we have a match!
+#  
+# 1100011000000101
+# 1100011000000101
+#  we have a match!
+#  
+# 1001101000000011
+# 1001101000000011
+#  we have a match!
+#  
+# 1110001001111011
+# 1110001001111011
+#  we have a match!
+#  
+# 1001101000111111
+# 1001101000111111
+#  we have a match!
+#  
+# 1010111111110101
+# 1010111111110101
+#  we have a match!
+#  
+# 1110111010000111
+# 1110111010000111
+#  we have a match!
+#  
+# 1101001011101110
+# 1101001011101110
+#  we have a match!
+#  
+# program 1 score =    15 out of    15
+# ** Note: $stop    : C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/prog1_tb.sv(62)
+#    Time: 21855 ns  Iteration: 0  Instance: /prog1_tb
+# Break in Module prog1_tb at C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/prog1_tb.sv line 62
+# Compile of Control.sv was successful.
+# Compile of dat_mem.sv was successful.
+# Compile of instr_ROM.sv was successful.
+# Compile of PC.sv was successful.
+# Compile of PC_LUT.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of top_level.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of milestone2_quicktest.sv was successful.
+# Compile of milestone2_quicktest_tb.sv was successful.
+# Compile of sign_ext.sv was successful.
+# Compile of prog1_tb.sv was successful.
+# Compile of prog2_tb.sv was successful.
+# Compile of prog3_tb.sv was successful.
+# 14 compiles, 0 failed with no errors.
+vsim -gui work.prog2_tb
+# End time: 02:34:38 on Aug 29,2023, Elapsed time: 0:12:27
+# Errors: 0, Warnings: 4
+# vsim -gui work.prog2_tb 
+# Start time: 02:34:38 on Aug 29,2023
+# Loading sv_std.std
+# Loading work.prog2_tb
+# Loading work.top_level
+# Loading work.PC
+# Loading work.PC_LUT
+# Loading work.instr_ROM
+# Loading work.Control
+# Loading work.reg_file
+# Loading work.sign_ext
+# Loading work.alu
+# Loading work.dat_mem
+add wave -position insertpoint sim:/prog2_tb/DUT/*
+run -all
+#  
+# start program 2
+#  
+# 0000010100100100
+# 1000010100110100
+# two errors injected, expecting MSB of output = 1'b1
+# we have a match
+# expected 1???????????????, got 1000010100110100
+# flip positions = 001001 0001
+#  
+# 0000011001100011
+# 0000011001100011
+# no errors injected, expecting MSBs of output = 2'b00
+# we have a match
+# expected 0000011001100011, got 0000011001100011
+# flip positions = 001101 1101
+#  
+# 0000010001100101
+# 1000010001100101
+# two errors injected, expecting MSB of output = 1'b1
+# we have a match
+# expected 1???????????????, got 1000010001100101
+# flip positions = 000001 0010
+#  
+# 0000010100001101
+# 0100010100001101
+# single error injected, expecting MSBs of output = 2'b01
+# we have a match
+# expected 0100010100001101, got 0100010100001101
+# flip positions = 111101 0110
+#  
+# 0000011111101101
+# 0100011111101101
+# single error injected, expecting MSBs of output = 2'b01
+# we have a match
+# expected 0100011111101101, got 0100011111101101
+# flip positions = 111001 1100
+#  
+# 0000010011000110
+# 0100010011000110
+# single error injected, expecting MSBs of output = 2'b01
+# we have a match
+# expected 0100010011000110, got 0100010011000110
+# flip positions = 101010 0101
+#  
+# 0000011111100101
+# 0100011111100101
+# single error injected, expecting MSBs of output = 2'b01
+# we have a match
+# expected 0100011111100101, got 0100011111100101
+# flip positions = 010010 0111
+#  
+# 0000001110001111
+# 1000000110001111
+# two errors injected, expecting MSB of output = 1'b1
+# we have a match
+# expected 1???????????????, got 1000000110001111
+# flip positions = 001110 0010
+#  
+# 0000001011101000
+# 0100001011101000
+# single error injected, expecting MSBs of output = 2'b01
+# we have a match
+# expected 0100001011101000, got 0100001011101000
+# flip positions = 011100 0101
+#  
+# 0000000010111101
+# 0100000010111101
+# single error injected, expecting MSBs of output = 2'b01
+# we have a match
+# expected 0100000010111101, got 0100000010111101
+# flip positions = 100101 1101
+#  
+# 0000001001100011
+# 1000001001000011
+# two errors injected, expecting MSB of output = 1'b1
+# we have a match
+# expected 1???????????????, got 1000001001000011
+# flip positions = 000000 1010
+#  
+# 0000000100100000
+# 0100000100100000
+# single error injected, expecting MSBs of output = 2'b01
+# we have a match
+# expected 0100000100100000, got 0100000100100000
+# flip positions = 011101 1010
+#  
+# 0000011010010110
+# 1000011110010111
+# two errors injected, expecting MSB of output = 1'b1
+# we have a match
+# expected 1???????????????, got 1000011110010111
+# flip positions = 001101 0011
+#  
+# 0000011001010011
+# 0100011001010011
+# single error injected, expecting MSBs of output = 2'b01
+# we have a match
+# expected 0100011001010011, got 0100011001010011
+# flip positions = 010101 1011
+#  
+# 0000001000000010
+# 0100001000000010
+# single error injected, expecting MSBs of output = 2'b01
+# we have a match
+# expected 0100001000000010, got 0100001000000010
+# flip positions = 011101 1110
+#  
+# program 2 score =    15 out of    15
+# ** Note: $stop    : C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/prog2_tb.sv(106)
+#    Time: 30525 ns  Iteration: 0  Instance: /prog2_tb
+# Break in Module prog2_tb at C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/prog2_tb.sv line 106
+# Compile of Control.sv was successful.
+# Compile of dat_mem.sv was successful.
+# Compile of instr_ROM.sv was successful.
+# Compile of PC.sv was successful.
+# Compile of PC_LUT.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of top_level.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of milestone2_quicktest.sv was successful.
+# Compile of milestone2_quicktest_tb.sv was successful.
+# Compile of sign_ext.sv was successful.
+# Compile of prog1_tb.sv was successful.
+# Compile of prog2_tb.sv was successful.
+# Compile of prog3_tb.sv was successful.
+# 14 compiles, 0 failed with no errors.
+vsim -gui work.prog2_tb
+# End time: 02:36:24 on Aug 29,2023, Elapsed time: 0:01:46
+# Errors: 0, Warnings: 2
+# vsim -gui work.prog2_tb 
+# Start time: 02:36:24 on Aug 29,2023
+# Loading sv_std.std
+# Loading work.prog2_tb
+# Loading work.top_level
+# Loading work.PC
+# Loading work.PC_LUT
+# Loading work.instr_ROM
+# Loading work.Control
+# Loading work.reg_file
+# Loading work.sign_ext
+# Loading work.alu
+# Loading work.dat_mem
+add wave -position insertpoint sim:/prog2_tb/DUT/*
+run -all
+#  
+# start program 2
+#  
+# 0000010100100100
+# 0100010100100100
+# single error injected, expecting MSBs of output = 2'b01
+# we have a match
+# expected 0100010100100100, got 0100010100100100
+# flip positions = 010000 0000
+#  
+# 0000011010000001
+# 0100011010000001
+# single error injected, expecting MSBs of output = 2'b01
+# we have a match
+# expected 0100011010000001, got 0100011010000001
+# flip positions = 010000 0001
+#  
+# 0000011000001001
+# 0100011000001001
+# single error injected, expecting MSBs of output = 2'b01
+# we have a match
+# expected 0100011000001001, got 0100011000001001
+# flip positions = 010000 0010
+#  
+# 0000011001100011
+# 0100011001100011
+# single error injected, expecting MSBs of output = 2'b01
+# we have a match
+# expected 0100011001100011, got 0100011001100011
+# flip positions = 010000 0011
+#  
+# 0000001100001101
+# 0100001100001101
+# single error injected, expecting MSBs of output = 2'b01
+# we have a match
+# expected 0100001100001101, got 0100001100001101
+# flip positions = 010000 0100
+#  
+# 0000000110001101
+# 0100000110001101
+# single error injected, expecting MSBs of output = 2'b01
+# we have a match
+# expected 0100000110001101, got 0100000110001101
+# flip positions = 010000 0101
+#  
+# 0000010001100101
+# 0100010001100101
+# single error injected, expecting MSBs of output = 2'b01
+# we have a match
+# expected 0100010001100101, got 0100010001100101
+# flip positions = 010000 0110
+#  
+# 0000001000010010
+# 0100001000010010
+# single error injected, expecting MSBs of output = 2'b01
+# we have a match
+# expected 0100001000010010, got 0100001000010010
+# flip positions = 010000 0111
+#  
+# 0000001100000001
+# 0100001100000001
+# single error injected, expecting MSBs of output = 2'b01
+# we have a match
+# expected 0100001100000001, got 0100001100000001
+# flip positions = 010000 1000
+#  
+# 0000010100001101
+# 0100010100001101
+# single error injected, expecting MSBs of output = 2'b01
+# we have a match
+# expected 0100010100001101, got 0100010100001101
+# flip positions = 010000 1001
+#  
+# 0000000101110110
+# 0100000101110110
+# single error injected, expecting MSBs of output = 2'b01
+# we have a match
+# expected 0100000101110110, got 0100000101110110
+# flip positions = 010000 1010
+#  
+# 0000010100111101
+# 0100010100111101
+# single error injected, expecting MSBs of output = 2'b01
+# we have a match
+# expected 0100010100111101, got 0100010100111101
+# flip positions = 010000 1011
+#  
+# 0000011111101101
+# 0100011111101101
+# single error injected, expecting MSBs of output = 2'b01
+# we have a match
+# expected 0100011111101101, got 0100011111101101
+# flip positions = 010000 1100
+#  
+# 0000011110001100
+# 0100011110001100
+# single error injected, expecting MSBs of output = 2'b01
+# we have a match
+# expected 0100011110001100, got 0100011110001100
+# flip positions = 010000 1101
+#  
+# 0000000111111001
+# 0100000111111001
+# single error injected, expecting MSBs of output = 2'b01
+# we have a match
+# expected 0100000111111001, got 0100000111111001
+# flip positions = 010000 1110
+#  
+# program 2 score =    15 out of    15
+# ** Note: $stop    : C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/prog2_tb.sv(106)
+#    Time: 33505 ns  Iteration: 0  Instance: /prog2_tb
+# Break in Module prog2_tb at C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/prog2_tb.sv line 106
+# Compile of Control.sv was successful.
+# Compile of dat_mem.sv was successful.
+# Compile of instr_ROM.sv was successful.
+# Compile of PC.sv was successful.
+# Compile of PC_LUT.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of top_level.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of milestone2_quicktest.sv was successful.
+# Compile of milestone2_quicktest_tb.sv was successful.
+# Compile of sign_ext.sv was successful.
+# Compile of prog1_tb.sv was successful.
+# Compile of prog2_tb.sv was successful.
+# Compile of prog3_tb.sv was successful.
+# 14 compiles, 0 failed with no errors.
+vsim -gui work.prog2_tb
+# End time: 02:37:09 on Aug 29,2023, Elapsed time: 0:00:45
+# Errors: 0, Warnings: 2
+# vsim -gui work.prog2_tb 
+# Start time: 02:37:09 on Aug 29,2023
+# Loading sv_std.std
+# Loading work.prog2_tb
+# Loading work.top_level
+# Loading work.PC
+# Loading work.PC_LUT
+# Loading work.instr_ROM
+# Loading work.Control
+# Loading work.reg_file
+# Loading work.sign_ext
+# Loading work.alu
+# Loading work.dat_mem
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint sim:/prog2_tb/DUT/*
+run -all
+#  
+# start program 2
+#  
+# 0000010100100100
+# 1000010100100100
+# two errors injected, expecting MSB of output = 1'b1
+# we have a match
+# expected 1???????????????, got 1000010100100100
+# flip positions = 000001 0000
+#  
+# 0000011010000001
+# 1000011010000001
+# two errors injected, expecting MSB of output = 1'b1
+# we have a match
+# expected 1???????????????, got 1000011010000001
+# flip positions = 000010 0001
+#  
+# 0000011000001001
+# 1000011000001000
+# two errors injected, expecting MSB of output = 1'b1
+# we have a match
+# expected 1???????????????, got 1000011000001000
+# flip positions = 000011 0010
+#  
+# 0000011001100011
+# 1000011001100010
+# two errors injected, expecting MSB of output = 1'b1
+# we have a match
+# expected 1???????????????, got 1000011001100010
+# flip positions = 000100 0011
+#  
+# 0000001100001101
+# 1000001100001111
+# two errors injected, expecting MSB of output = 1'b1
+# we have a match
+# expected 1???????????????, got 1000001100001111
+# flip positions = 000101 0100
+#  
+# 0000000110001101
+# 1000000110001011
+# two errors injected, expecting MSB of output = 1'b1
+# we have a match
+# expected 1???????????????, got 1000000110001011
+# flip positions = 000110 0101
+#  
+# 0000010001100101
+# 1000010001101001
+# two errors injected, expecting MSB of output = 1'b1
+# we have a match
+# expected 1???????????????, got 1000010001101001
+# flip positions = 000111 0110
+#  
+# 0000001000010010
+# 1000001000011010
+# two errors injected, expecting MSB of output = 1'b1
+# we have a match
+# expected 1???????????????, got 1000001000011010
+# flip positions = 001000 0111
+#  
+# 0000001100000001
+# 1000001100010001
+# two errors injected, expecting MSB of output = 1'b1
+# we have a match
+# expected 1???????????????, got 1000001100010001
+# flip positions = 001001 1000
+#  
+# 0000010100001101
+# 1000010100111101
+# two errors injected, expecting MSB of output = 1'b1
+# we have a match
+# expected 1???????????????, got 1000010100111101
+# flip positions = 001010 1001
+#  
+# 0000000101110110
+# 1000000100010110
+# two errors injected, expecting MSB of output = 1'b1
+# we have a match
+# expected 1???????????????, got 1000000100010110
+# flip positions = 001011 1010
+#  
+# 0000010100111101
+# 1000010111111101
+# two errors injected, expecting MSB of output = 1'b1
+# we have a match
+# expected 1???????????????, got 1000010111111101
+# flip positions = 001100 1011
+#  
+# 0000011111101101
+# 1000011001101101
+# two errors injected, expecting MSB of output = 1'b1
+# we have a match
+# expected 1???????????????, got 1000011001101101
+# flip positions = 001101 1100
+#  
+# 0000011110001100
+# 1000010010001100
+# two errors injected, expecting MSB of output = 1'b1
+# we have a match
+# expected 1???????????????, got 1000010010001100
+# flip positions = 001110 1101
+#  
+# 0000000111111001
+# 1000011111111001
+# two errors injected, expecting MSB of output = 1'b1
+# we have a match
+# expected 1???????????????, got 1000011111111001
+# flip positions = 001111 1110
+#  
+# program 2 score =    15 out of    15
+# ** Note: $stop    : C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/prog2_tb.sv(106)
+#    Time: 27015 ns  Iteration: 0  Instance: /prog2_tb
+# Break in Module prog2_tb at C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/prog2_tb.sv line 106
+# Compile of Control.sv was successful.
+# Compile of dat_mem.sv was successful.
+# Compile of instr_ROM.sv was successful.
+# Compile of PC.sv was successful.
+# Compile of PC_LUT.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of top_level.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of milestone2_quicktest.sv was successful.
+# Compile of milestone2_quicktest_tb.sv was successful.
+# Compile of sign_ext.sv was successful.
+# Compile of prog1_tb.sv was successful.
+# Compile of prog2_tb.sv was successful.
+# Compile of prog3_tb.sv was successful.
+# 14 compiles, 0 failed with no errors.
+vsim -gui work.prog3_tb
+# End time: 02:38:03 on Aug 29,2023, Elapsed time: 0:00:54
+# Errors: 0, Warnings: 2
+# vsim -gui work.prog3_tb 
+# Start time: 02:38:03 on Aug 29,2023
+# Loading sv_std.std
+# Loading work.prog3_tb
+# Loading work.top_level
+# Loading work.PC
+# Loading work.PC_LUT
+# Loading work.instr_ROM
+# Loading work.Control
+# Loading work.reg_file
+# Loading work.sign_ext
+# Loading work.alu
+# Loading work.dat_mem
+add wave -position insertpoint sim:/prog3_tb/DUT/*
+run -all
+#  
+# start program 3
+#  
+# number of patterns w/o byte crossing    =   3   3
+# number of bytes w/ at least one pattern =   3   3
+# number of patterns w/ byte crossing     =   6   6
+# ** Note: $stop    : C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/prog3_tb.sv(59)
+#    Time: 27685 ns  Iteration: 0  Instance: /prog3_tb
+# Break in Module prog3_tb at C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/prog3_tb.sv line 59
+# Compile of Control.sv was successful.
+# Compile of dat_mem.sv was successful.
+# Compile of instr_ROM.sv was successful.
+# Compile of PC.sv was successful.
+# Compile of PC_LUT.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of top_level.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of milestone2_quicktest.sv was successful.
+# Compile of milestone2_quicktest_tb.sv was successful.
+# Compile of sign_ext.sv was successful.
+# Compile of prog1_tb.sv was successful.
+# Compile of prog2_tb.sv was successful.
+# Compile of prog3_tb.sv was successful.
+# 14 compiles, 0 failed with no errors.
+vsim -gui work.prog3_tb
+# End time: 02:40:08 on Aug 29,2023, Elapsed time: 0:02:05
+# Errors: 0, Warnings: 2
+# vsim -gui work.prog3_tb 
+# Start time: 02:40:08 on Aug 29,2023
+# Loading sv_std.std
+# Loading work.prog3_tb
+# Loading work.top_level
+# Loading work.PC
+# Loading work.PC_LUT
+# Loading work.instr_ROM
+# Loading work.Control
+# Loading work.reg_file
+# Loading work.sign_ext
+# Loading work.alu
+# Loading work.dat_mem
+# WARNING: No extended dataflow license exists
+run -all
+#  
+# start program 3
+#  
+# number of patterns w/o byte crossing    = 128 128
+# number of bytes w/ at least one pattern =  32  32
+# number of patterns w/ byte crossing     = 252 252
+# ** Note: $stop    : C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/prog3_tb.sv(59)
+#    Time: 41945 ns  Iteration: 0  Instance: /prog3_tb
+# Break in Module prog3_tb at C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/prog3_tb.sv line 59
+# End time: 02:46:24 on Aug 29,2023, Elapsed time: 0:06:16
+# Errors: 0, Warnings: 1

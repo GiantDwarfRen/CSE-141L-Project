@@ -1,0 +1,340 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/18758/Desktop/CSE 140L/Lab 4,5/Lab5/Verilog
+valu
+Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z1 !s110 1693247996
+!i10b 1
+!s100 Q=I=:DJ[;Hk>d:KdN3@@=3
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I]Pbc0RNDeoZ3aKCSP`IPg1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+S1
+Z4 dC:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code
+w1692904790
+8C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/alu.sv
+FC:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/alu.sv
+!i122 1427
+L0 3 57
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1693247996.000000
+!s107 C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/alu.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/alu.sv|
+!i113 1
+Z7 o-work work -sv
+Z8 tCvgOpt 0
+vControl
+R0
+Z9 !s110 1693247995
+!i10b 1
+!s100 m_zggaTm;UC3MI13XWN`K3
+R2
+I::RI7i9U@;A5ozdlfEYXb2
+R3
+S1
+R4
+w1692904981
+8C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/Control.sv
+FC:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/Control.sv
+!i122 1420
+L0 2 62
+R5
+r1
+!s85 0
+31
+!s108 1693247994.000000
+!s107 C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/Control.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/Control.sv|
+!i113 1
+R7
+R8
+n@control
+vdat_mem
+R0
+R9
+!i10b 1
+!s100 6=@:I[0zVKdofFED05Fnf1
+R2
+I6mieSj1T>g^<O72Na>F[>0
+R3
+S1
+R4
+w1692298304
+8C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/dat_mem.sv
+FC:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/dat_mem.sv
+!i122 1421
+L0 2 18
+R5
+r1
+!s85 0
+31
+Z10 !s108 1693247995.000000
+!s107 C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/dat_mem.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/dat_mem.sv|
+!i113 1
+R7
+R8
+vinstr_ROM
+R0
+R9
+!i10b 1
+!s100 ;eA=gll2B@eWHXKmWz>Ac2
+R2
+IDo=hACMoB0h`adMKL5=R;1
+R3
+S1
+R4
+w1693247868
+8C:\Users\18758\Desktop\CSE 141\CSE 141L\hardware_starter_code\instr_ROM.sv
+FC:\Users\18758\Desktop\CSE 141\CSE 141L\hardware_starter_code\instr_ROM.sv
+!i122 1422
+L0 4 11
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:\Users\18758\Desktop\CSE 141\CSE 141L\hardware_starter_code\instr_ROM.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:\Users\18758\Desktop\CSE 141\CSE 141L\hardware_starter_code\instr_ROM.sv|
+!i113 1
+R7
+R8
+ninstr_@r@o@m
+vmilestone2_quicktest_tb
+R0
+R1
+!i10b 1
+!s100 ^D_a1YidDA;UJkb=OX^g31
+R2
+I<eliTbeM8zXNG6A5AS=W=3
+R3
+S1
+R4
+w1692821775
+8C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/milestone2_quicktest_tb.sv
+FC:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/milestone2_quicktest_tb.sv
+!i122 1428
+L0 1 70
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/milestone2_quicktest_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/milestone2_quicktest_tb.sv|
+!i113 1
+R7
+R8
+vPC
+R0
+R9
+!i10b 1
+!s100 YzSa0NeBEiHPAhB6fj_Y_3
+R2
+IC3?naeO9<Aajl[zLRo;NF0
+R3
+S1
+R4
+w1692565839
+8C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/PC.sv
+FC:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/PC.sv
+!i122 1423
+L0 4 20
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/PC.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/PC.sv|
+!i113 1
+R7
+R8
+n@p@c
+vPC_LUT
+R0
+R9
+!i10b 1
+!s100 M9T7RXGiJ`2i9Yn_=UoNA3
+R2
+I;zlf<K@<fY8HZ7Da5_Jjc3
+R3
+S1
+R4
+w1693170798
+8C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/PC_LUT.sv
+FC:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/PC_LUT.sv
+!i122 1424
+L0 1 58
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/PC_LUT.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/PC_LUT.sv|
+!i113 1
+R7
+R8
+n@p@c_@l@u@t
+vprog1_tb
+R0
+Z11 !s110 1693247997
+!i10b 1
+!s100 [mOAY??0Jf7SiC]dBYYcY2
+R2
+IfSU1FnFQ8de7BSOmI:ePb1
+R3
+S1
+R4
+w1692826528
+8C:\Users\18758\Desktop\CSE 141\CSE 141L\hardware_starter_code\prog1_tb.sv
+FC:\Users\18758\Desktop\CSE 141\CSE 141L\hardware_starter_code\prog1_tb.sv
+!i122 1430
+L0 10 61
+R5
+r1
+!s85 0
+31
+Z12 !s108 1693247997.000000
+!s107 C:\Users\18758\Desktop\CSE 141\CSE 141L\hardware_starter_code\prog1_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:\Users\18758\Desktop\CSE 141\CSE 141L\hardware_starter_code\prog1_tb.sv|
+!i113 1
+R7
+R8
+vprog2_tb
+R0
+R11
+!i10b 1
+!s100 iT1a6ec6:60J:emm<EFO60
+R2
+I[A0aTc>_U[iz7OdY5^Sec3
+R3
+S1
+R4
+w1693247810
+8C:\Users\18758\Desktop\CSE 141\CSE 141L\hardware_starter_code\prog2_tb.sv
+FC:\Users\18758\Desktop\CSE 141\CSE 141L\hardware_starter_code\prog2_tb.sv
+!i122 1431
+L0 10 105
+R5
+r1
+!s85 0
+31
+R12
+!s107 C:\Users\18758\Desktop\CSE 141\CSE 141L\hardware_starter_code\prog2_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:\Users\18758\Desktop\CSE 141\CSE 141L\hardware_starter_code\prog2_tb.sv|
+!i113 1
+R7
+R8
+vprog3_tb
+R0
+R11
+!i10b 1
+!s100 4H?TK8gbK;<92gSO;oYA13
+R2
+IQ@GIA@0SADMX`Bk]QifLS1
+R3
+S1
+R4
+w1693247990
+8C:\Users\18758\Desktop\CSE 141\CSE 141L\hardware_starter_code\prog3_tb.sv
+FC:\Users\18758\Desktop\CSE 141\CSE 141L\hardware_starter_code\prog3_tb.sv
+!i122 1432
+L0 3 65
+R5
+r1
+!s85 0
+31
+R12
+!s107 C:\Users\18758\Desktop\CSE 141\CSE 141L\hardware_starter_code\prog3_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:\Users\18758\Desktop\CSE 141\CSE 141L\hardware_starter_code\prog3_tb.sv|
+!i113 1
+R7
+R8
+vreg_file
+R0
+R1
+!i10b 1
+!s100 J8;mGo4z@DAO22OA3No?d0
+R2
+Io@XH31K6H58NSc9<Ez7?_3
+R3
+S1
+R4
+w1692568851
+8C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/reg_file.sv
+FC:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/reg_file.sv
+!i122 1425
+L0 3 21
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/reg_file.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/reg_file.sv|
+!i113 1
+R7
+R8
+vsign_ext
+R0
+R11
+!i10b 1
+!s100 473fi?NYNM4@00=l?8EEV3
+R2
+I<zEOZ^0zDaJ1>I7b7?Yk?2
+R3
+S1
+R4
+w1692569207
+8C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/sign_ext.sv
+FC:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/sign_ext.sv
+!i122 1429
+L0 1 18
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/sign_ext.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/sign_ext.sv|
+!i113 1
+R7
+R8
+vtop_level
+R0
+R1
+!i10b 1
+!s100 ]e2P<XEZ:k?GDPilAj^eD3
+R2
+IMBRQ^RC3:>]cf]P[MIb>d3
+R3
+S1
+R4
+w1692904819
+8C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/top_level.sv
+FC:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/top_level.sv
+!i122 1426
+L0 2 104
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/top_level.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/18758/Desktop/CSE 141/CSE 141L/hardware_starter_code/top_level.sv|
+!i113 1
+R7
+R8
